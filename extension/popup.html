@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Aider Bridge</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      width: 400px;
+      padding: 16px;
+      background: #f5f5f5;
+    }
+    
+    h1 {
+      font-size: 18px;
+      margin-bottom: 12px;
+      color: #1a1a1a;
+    }
+    
+    .status {
+      padding: 12px;
+      background: #fff3cd;
+      border: 1px solid #ffc107;
+      border-radius: 4px;
+      margin-bottom: 12px;
+      font-size: 12px;
+    }
+    
+    .status.connected {
+      background: #d4edda;
+      border-color: #28a745;
+      color: #155724;
+    }
+    
+    .section {
+      background: white;
+      padding: 12px;
+      border-radius: 6px;
+      margin-bottom: 12px;
+      border: 1px solid #e0e0e0;
+    }
+    
+    h3 {
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #333;
+    }
+    
+    .btn {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 500;
+      transition: all 0.2s;
+      margin-bottom: 8px;
+    }
+    
+    .btn-primary {
+      background: #0066cc;
+      color: white;
+    }
+    
+    .btn-primary:hover {
+      background: #0052a3;
+    }
+    
+    .btn-success {
+      background: #28a745;
+      color: white;
+    }
+    
+    .btn-success:hover {
+      background: #218838;
+    }
+    
+    .info {
+      font-size: 11px;
+      color: #666;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🌉 Aider Bridge</h1>
+  
+  <div class="status" id="status">
+    ⏳ Checking connection...
+  </div>
+  
+  <div class="section">
+    <h3>Quick Actions</h3>
+    <button class="btn btn-success" id="runBtn">▶️ Run Aider Bridge</button>
+    <p class="info">Click to execute YAML on page</p>
+  </div>
+  
+  <div class="section">
+    <h3>Platform</h3>
+    <p id="platform" style="font-size: 12px; color: #666;">Detecting...</p>
+  </div>
+  
+  <div class="section">
+    <h3>Help</h3>
+    <p style="font-size: 11px; color: #666;">
+      1. Create YAML in Claude/Perplexity<br>
+      2. Click "Run Aider Bridge"<br>
+      3. Response auto-fills input<br><br>
+      API: http://localhost:5000
+    </p>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

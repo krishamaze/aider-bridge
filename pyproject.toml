@@ -1,0 +1,41 @@
+﻿[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aider-bridge"
+version = "0.1.0"
+description = "Browser extension + API server for Claude/Perplexity integration with Aider"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "Your Name", email = "your.email@example.com"},
+]
+keywords = ["aider", "claude", "perplexity", "browser-extension", "api"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+dependencies = [
+    "aider-ai>=0.25.0",
+    "flask>=2.3.0",
+    "flask-cors>=4.0.0",
+    "pyyaml>=6.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/aider-bridge"
+Documentation = "https://github.com/yourusername/aider-bridge/blob/main/docs/SETUP.md"
+Repository = "https://github.com/yourusername/aider-bridge.git"
+Issues = "https://github.com/yourusername/aider-bridge/issues"
+
+[project.scripts]
+aider-bridge-start = "aider_bridge.cli:start_server"

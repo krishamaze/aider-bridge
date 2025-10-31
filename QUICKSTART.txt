@@ -1,0 +1,52 @@
+﻿╔════════════════════════════════════════════════════════╗
+║          AIDER BRIDGE - QUICK START                   ║
+║          Ready to use with Claude & Perplexity        ║
+╚════════════════════════════════════════════════════════╝
+
+🚀 WHAT YOU NEED:
+  ✅ Python 3.9+
+  ✅ Aider installed (pip install aider-ai)
+  ✅ Chrome browser
+  ✅ API key (GEMINI_API_KEY or similar)
+
+📦 WHAT YOU HAVE:
+  ✅ Complete Aider Bridge package
+  ✅ API Server (Flask)
+  ✅ Chrome Extension
+  ✅ Documentation
+
+🎯 QUICK START (3 STEPS):
+
+1️⃣  START API SERVER
+    Windows: scripts\start-api.bat
+    PowerShell: .\scripts\start-api.ps1
+    
+    Should see: Running on http://127.0.0.1:5000
+
+2️⃣  INSTALL EXTENSION
+    • Go to chrome://extensions/
+    • Enable "Developer mode"
+    • Click "Load unpacked"
+    • Select the "extension" folder
+
+3️⃣  USE IT!
+    • Open claude.ai or perplexity.ai
+    • Ask Claude to format response as YAML
+    • Click Aider Bridge extension
+    • Click "Run Aider Bridge"
+    • Watch it auto-fill! ✨
+
+📚 FOR DETAILED SETUP:
+    Read: docs/SETUP.md
+
+❓ NEED HELP?
+    • Check console (F12) for errors
+    • Make sure API is running
+    • Make sure API key is set
+    • Refresh the page
+
+🔗 API RUNS ON: http://localhost:5000
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Made with ❤️ for developers
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
