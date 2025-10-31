@@ -18,24 +18,18 @@ classifiers = [
     "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.10",
-    "Programming Language :: Python :: 3.11",
-    "Programming Language :: Python :: 3.12",
 ]
 
 dependencies = [
-    "aider-ai>=0.25.0",
+    "aider>=0.25.0",
     "flask>=2.3.0",
     "flask-cors>=4.0.0",
     "pyyaml>=6.0",
 ]
 
 [project.urls]
-Homepage = "https://github.com/yourusername/aider-bridge"
-Documentation = "https://github.com/yourusername/aider-bridge/blob/main/docs/SETUP.md"
-Repository = "https://github.com/yourusername/aider-bridge.git"
-Issues = "https://github.com/yourusername/aider-bridge/issues"
+Homepage = "https://github.com/krishamaze/aider-bridge"
+Repository = "https://github.com/krishamaze/aider-bridge.git"
 
 [project.scripts]
 aider-bridge-start = "aider_bridge.cli:start_server"
